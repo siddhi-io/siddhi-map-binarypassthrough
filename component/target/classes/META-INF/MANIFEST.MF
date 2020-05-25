@@ -1,0 +1,38 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1589891129070
+Build-Jdk: 1.8.0_152
+Built-By: lasanthas
+Bundle-Contributors: WSO2 Inc
+Bundle-Copyright: WSO2 Inc
+Bundle-Description: Siddhi, Stream Processing and Complex Event Processi
+ ng Engine
+Bundle-Developers: WSO2 Inc
+Bundle-DocURL: https://docs.wso2.com
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: siddhi-map-binarypassthru
+Bundle-SymbolicName: siddhi-map-binarypassthru
+Bundle-Vendor: WSO2 Inc
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+DynamicImport-Package: *
+Export-Package: io.siddhi.extension.map.binarypassthru.sinkmapper;uses:=
+ "io.siddhi.annotation,io.siddhi.core.config,io.siddhi.core.event,io.sid
+ dhi.core.stream.output.sink,io.siddhi.core.util.config,io.siddhi.core.u
+ til.transport,io.siddhi.query.api.definition";version="1.0.0",io.siddhi
+ .extension.map.binarypassthru.sourcemapper;uses:="io.siddhi.annotation,
+ io.siddhi.core.config,io.siddhi.core.stream.input.source,io.siddhi.core
+ .util.config,io.siddhi.core.util.transport,io.siddhi.query.api.definiti
+ on";version="1.0.0"
+Import-Package: io.siddhi.annotation;resolution:=optional;version="[5.0,
+ 6)",io.siddhi.core.config;resolution:=optional;version="[5.0,6)",io.sid
+ dhi.core.event;resolution:=optional;version="[5.0,6)",io.siddhi.core.ex
+ ception;resolution:=optional;version="[5.0,6)",io.siddhi.core.stream.in
+ put.source;resolution:=optional;version="[5.0,6)",io.siddhi.core.stream
+ .output.sink;resolution:=optional;version="[5.0,6)",io.siddhi.core.util
+ .config;resolution:=optional;version="[5.0,6)",io.siddhi.core.util.tran
+ sport;resolution:=optional;version="[5.0,6)",io.siddhi.query.api.defini
+ tion;resolution:=optional;version="[5.0,6)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+SCM-Revision: 2020-05-19T12:25:23Z
+Tool: Bnd-3.2.0.201605172007

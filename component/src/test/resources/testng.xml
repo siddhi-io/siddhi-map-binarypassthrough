@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Siddhi-Map-Binarypassthru-Test-Suite">
+    <test name="Siddhi-map-binarypassthru-tests" enabled="true" preserve-order="true" parallel="false">
+        <classes>
+            <class name="io.siddhi.extension.map.binarypassthru.sinkmapper.TestCaseOfBinarypassthruSinkMapper"/>
+            <class name="io.siddhi.extension.map.binarypassthru.sourcemapper.TestCaseOfBinarypassthruSourceMapper"/>
+        </classes>
+    </test>
+</suite>
