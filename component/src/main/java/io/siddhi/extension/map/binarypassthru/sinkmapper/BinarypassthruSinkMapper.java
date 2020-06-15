@@ -64,7 +64,7 @@ import java.util.Map;
  * </code></pre>
  */
 @Extension(
-        name = "binarypassthru",
+        name = "binaryPassThrough",
         namespace = "sinkMapper",
         description = " ",
         parameters = {
