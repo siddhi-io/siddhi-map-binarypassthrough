@@ -69,24 +69,18 @@ import java.util.List;
         name = "binaryPassThrough",
         namespace = "sourceMapper",
         description = " ",
-        parameters = {
-                /*@Parameter(name = " ",
-                        description = " " ,
-                        dynamic = false/true,
-                        optional = true/false, defaultValue = " ",
-                        type = {DataType.INT, DataType.BOOL, DataType.STRING, DataType.DOUBLE,etc }),
-                        type = {DataType.INT, DataType.BOOL, DataType.STRING, DataType.DOUBLE, }),*/
-        },
         examples = {
                 @Example(
-                        syntax = " ",
+                        syntax = "@source(type='file', mode='binary.chunked', file.uri='', " +
+                                "@map(type='binaryPassThrough'))\n" +
+                                "define stream FooStream( buffer object);",
                         description = " "
                 )
         }
 )
 // for more information refer https://siddhi.io/en/v5.0/docs/query-guide/#source-mapper
-public class BinarypassthruSourceMapper extends SourceMapper {
-    static final Logger LOG = Logger.getLogger(BinarypassthruSourceMapper.class);
+public class BinaryPassThroughSourceMapper extends SourceMapper {
+    static final Logger LOG = Logger.getLogger(BinaryPassThroughSourceMapper.class);
     private StreamDefinition streamDefinition;
 
     /**

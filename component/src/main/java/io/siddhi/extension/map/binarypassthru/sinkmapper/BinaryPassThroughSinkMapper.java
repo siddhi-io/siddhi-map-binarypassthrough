@@ -60,6 +60,7 @@ import java.util.Map;
  *                              description =" The description of the given example's query."
  *                      ),
  * }
+ *
  * )
  * </code></pre>
  */
@@ -67,23 +68,17 @@ import java.util.Map;
         name = "binaryPassThrough",
         namespace = "sinkMapper",
         description = " ",
-        parameters = {
-                /*@Parameter(
-                        name = " ",
-                        description = " " ,
-                        dynamic = false/true,
-                        optional = true/false, defaultValue = " ",
-                        type = {DataType.INT or DataType.BOOL or DataType.STRING or DataType.DOUBLE, }),*/
-        },
         examples = {
                 @Example(
-                        syntax = " ",
+                        syntax = "@sink(type='websocket-server', host='localhost', port='8080', @map" +
+                                "(type='binaryPassThrough')) \n " +
+                                "define stream BarStream (buffer object);",
                         description = " "
                 )
         }
 )
 // for more information refer https://siddhi.io/en/v5.0/docs/query-guide/#sink-mapper
-public class BinarypassthruSinkMapper extends SinkMapper {
+public class BinaryPassThroughSinkMapper extends SinkMapper {
 
     /**
      * The initialization method for {@link SinkMapper}, which will be called before other methods and validate
