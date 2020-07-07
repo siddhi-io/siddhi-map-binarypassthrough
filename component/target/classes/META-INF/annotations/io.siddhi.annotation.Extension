@@ -1,2 +1,2 @@
-io.siddhi.extension.map.binarypassthru.sinkmapper.BinarypassthruSinkMapper
-io.siddhi.extension.map.binarypassthru.sourcemapper.BinarypassthruSourceMapper
+io.siddhi.extension.map.binarypassthrough.sinkmapper.BinaryPassThroughSinkMapper
+io.siddhi.extension.map.binarypassthrough.sourcemapper.BinaryPassThroughSourceMapper

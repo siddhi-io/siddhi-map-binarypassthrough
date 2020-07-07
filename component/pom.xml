@@ -3,14 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>io.siddhi.extension.map.binarypassthru</groupId>
-        <artifactId>siddhi-map-binarypassthru-parent</artifactId>
+        <groupId>io.siddhi.extension.map.binarypassthrough</groupId>
+        <artifactId>siddhi-map-binarypassthrough-parent</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>siddhi-map-binarypassthru</artifactId>
+    <artifactId>siddhi-map-binarypassthrough</artifactId>
     <packaging>bundle</packaging>
-    <name>Siddhi map binarypassthru Extension</name>
+    <name>Siddhi Map binaryPassThrough Extension</name>
     <dependencies>
         <dependency>
             <groupId>io.siddhi</groupId>
@@ -116,8 +116,8 @@
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
                         <Export-Package>
-                            io.siddhi.extension.map.binarypassthru.sinkmapper.*,
-                            io.siddhi.extension.map.binarypassthru.sourcemapper.*
+                            io.siddhi.extension.map.binarypassthrough.sinkmapper.*,
+                            io.siddhi.extension.map.binarypassthrough.sourcemapper.*
                         </Export-Package>
                         <Import-Package>
                             *;resolution:=optional

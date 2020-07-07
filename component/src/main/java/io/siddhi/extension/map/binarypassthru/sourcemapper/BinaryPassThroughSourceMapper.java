@@ -1,4 +1,4 @@
-package io.siddhi.extension.map.binarypassthru.sourcemapper;
+package io.siddhi.extension.map.binarypassthrough.sourcemapper;
 
 import io.siddhi.annotation.Example;
 import io.siddhi.annotation.Extension;

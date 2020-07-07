@@ -1,4 +1,4 @@
-package io.siddhi.extension.map.binarypassthru.sinkmapper;
+package io.siddhi.extension.map.binarypassthrough.sinkmapper;
 
 import io.siddhi.annotation.Example;
 import io.siddhi.annotation.Extension;
