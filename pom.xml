@@ -21,9 +21,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>io.siddhi</groupId>
-        <artifactId>siddhi</artifactId>
-        <version>5.0.0</version>
+        <groupId>org.wso2</groupId>
+        <artifactId>wso2</artifactId>
+        <version>5</version>
     </parent>
     <groupId>io.siddhi.extension.map.binarypassthrough</groupId>
     <artifactId>siddhi-map-binarypassthrough-parent</artifactId>
@@ -90,6 +90,31 @@
         </dependencies>
     </dependencyManagement>
     <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                </plugin>
+                <plugin>
+                    <groupId>org.jvnet.maven.incrementalbuild</groupId>
+                    <artifactId>incremental-build-plugin</artifactId>
+                    <version>1.3</version>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>incremental-build</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>org.wso2.carbon.maven</groupId>
+                    <artifactId>carbon-feature-plugin</artifactId>
+                    <version>${carbon.feature.plugin.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -99,46 +124,6 @@
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>io.siddhi</groupId>
-                <artifactId>siddhi-doc-gen</artifactId>
-                <version>${siddhi.version}</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>generate-md-docs</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.jacoco</groupId>
-                <artifactId>jacoco-maven-plugin</artifactId>
-                <version>${jacoco.plugin.version}</version>
-                <executions>
-                    <execution>
-                        <id>jacoco-initialize</id>
-                        <goals>
-                            <goal>prepare-agent</goal>
-                        </goals>
-                        <configuration>
-                            <destFile>${basedir}/target/coverage-reports/jacoco.exec</destFile>
-                            <propertyName>surefireArgLine</propertyName>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>jacoco-site</id>
-                        <phase>post-integration-test</phase>
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
-                        <configuration>
-                            <dataFile>${basedir}/target/coverage-reports/jacoco.exec</dataFile>
-                            <outputDirectory>${basedir}/target/coverage-reports/</outputDirectory>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
         </plugins>
     </build>
     <properties>
@@ -147,4 +132,11 @@
         <testng.version>6.8</testng.version>
         <jacoco.plugin.version>0.7.9</jacoco.plugin.version>
     </properties>
+
+    <scm>
+        <url>https://github.com/siddhi-io/siddhi-map-binarypassthrough.git</url>
+        <developerConnection>scm:git:https://github.com/siddhi-io/siddhi-map-binarypassthrough.git</developerConnection>
+        <connection>scm:git:https://github.com/siddhi-io/siddhi-map-binarypassthrough.git</connection>
+        <tag>HEAD</tag>
+    </scm>
 </project>
