@@ -11,7 +11,12 @@ Versions with group id `io.siddhi.extension.map.*` from <a target="_blank" href=
 
 ## Latest API Docs
 
+Latest API Docs is <a target="_blank" href="https://wso2-extensions.github.io/siddhi-map-binarypassthrough/api/1.0.0">1.0.0</a>.
+
 ## Features
+
+* <a target="_blank" href="https://wso2-extensions.github.io/siddhi-map-binarypassthrough/api/1.0.0/#binarypassthrough-sink-mapper">binaryPassThrough</a> *<a target="_blank" href="http://siddhi.io/documentation/siddhi-5.x/query-guide-5.x/#sink-mapper">(Sink Mapper)</a>*<br><div style="padding-left: 1em;"><p> </p></div>
+* <a target="_blank" href="https://wso2-extensions.github.io/siddhi-map-binarypassthrough/api/1.0.0/#binarypassthrough-source-mapper">binaryPassThrough</a> *<a target="_blank" href="http://siddhi.io/documentation/siddhi-5.x/query-guide-5.x/#source-mapper">(Source Mapper)</a>*<br><div style="padding-left: 1em;"><p> </p></div>
 
 ## Dependencies
 

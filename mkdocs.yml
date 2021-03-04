@@ -1,27 +1,28 @@
 site_name: Siddhi Map Binarypassthrough
 site_description: Siddhi Map Binarypassthrough Extension
 repo_name: Siddhi-Store-Binarypassthrough
-repo_url:
-edit_url:
-copyright:
+repo_url: null
+edit_url: null
+copyright: null
 theme:
-  name: 'material'
+  name: material
   logo: images/siddhi-logo.svg
   favicon: images/favicon.ico
   palette:
     primary: teal
     accent: teal
 extra_css:
-  - assets/stylesheets/extra.css
+- assets/stylesheets/extra.css
 extra_javascript:
-  - assets/javascripts/extra.js
+- assets/javascripts/extra.js
 extra:
-  social:
-google_analytics:
+  social: null
+google_analytics: null
 markdown_extensions:
-  - markdown.extensions.admonition
+- markdown.extensions.admonition
 pages:
-  - Information : index.md
-  - API Docs:
-      - latest: api/latest.md
-  - License: license.md
+- Information: index.md
+- API Docs:
+  - 1.0.0: api/1.0.0.md
+  - latest: api/latest.md
+- License: license.md
